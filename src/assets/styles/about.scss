@@ -1,0 +1,198 @@
+.about {
+    background: radial-gradient(circle, #3a3a3f, #111);
+    //background-color: #3a3a3f;
+    color: white;
+    min-width: 100%;
+    padding-top: 50px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+    .title {
+        margin: 10px 0px 10px 0px;
+        font-size: 30px;
+        border-bottom: 2px solid white;
+    }
+    .introduction-container {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 50px;
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 160px;
+            margin-right: 20px;
+            min-height: 90vh;
+            width: 50%;
+
+            .name {
+                font-size: 90px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                border-bottom: 2px solid white;
+            }
+            .subtitle {
+                font-size: 30px;
+                margin: 0px;
+            }
+            .description {
+                font-size: 15px;
+            }
+        }
+        #tsparticles {
+            margin: 100px 10px 10px 10px;
+
+            width: 50%;
+            height: 500px;
+        }
+    }
+    .my-info {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        display: flex;
+        flex-direction: row;
+    
+        margin: 10px auto;
+        margin-left: 50px;
+        height: 100vh;
+      
+    
+        .whoami {
+            width: 50%;
+            .title {
+                margin-bottom: 50px;
+                font-size: 40px;
+            }
+            .description {
+                margin-left: 20px;
+                text-align: left;
+                font-size: 17px;
+                margin-top: 1px;
+                padding: 0;
+            }
+            .contact-me {
+                margin-left: 20px;
+                font-size: 17px;
+                margin-top: 1px;
+                margin-right: auto;
+                color: rgb(255, 255, 255);
+                text-align: center;
+                transition: transform 0.5s ease-out, color 0.5s ease-out;
+                background-color: transparent;
+                border: 0;
+            }
+            .contact-me:hover {
+                transform: scale(1.02);
+                color: rgb(109, 109, 109);
+            }
+        }
+        .skill {
+            width: 50%;
+            margin-left: 20px;
+            margin-right: 20px;
+            .skillBars {
+                
+                .chart {
+                    p {
+                        font-size: 15px;
+                        margin-bottom: 10px;
+                    }
+                    footer {
+                        background-color: rgb(78, 78, 78);
+                        height: 2px;
+                        .java {
+                            width: 0%;
+                            height: 100%;
+                            animation: java 2s forwards;
+                            animation-delay: 1s;
+                        }
+                        .python {
+                            width: 0%;
+                            height: 100%;
+                            animation: python 2s forwards;
+                            animation-delay: 1s;
+                        }
+                        .kivy {
+                            width: 0%;
+                            height: 100%;
+                            animation: kivy 2s forwards;
+                            animation-delay: 1s;
+                        }
+                        .react {
+                            width: 0%;
+                            height: 100%;
+                            animation: react 2s forwards;
+                            animation-delay: 1s;
+                        }
+                        .html-css {
+                            width: 0%;
+                            height: 100%;
+                            animation: html-css 2s forwards;
+                            animation-delay: 1s;
+                        }
+                        .firebase {
+                            width: 0%;
+                            height: 100%;
+                            animation: firebase 2s forwards;
+                            animation-delay: 1s;
+                        }
+                        .typescript {
+                            width: 0%;
+                            height: 100%;
+                            animation: typescript 2s forwards;
+                            animation-delay: 1s;
+                        }
+                        .c-plus {
+                            width: 0%;
+                            height: 100%;
+                            animation: c-plus 2s forwards;
+                            animation-delay: 1s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@keyframes java {
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes python {
+    100% {
+        width: 80%;
+    }
+}
+@keyframes html-css {
+    100% {
+        width: 60%;
+    }
+}
+@keyframes kivy {
+    100% {
+        width: 70%;
+    }
+}
+@keyframes react {
+    100% {
+        width: 70%;
+    }
+}
+@keyframes firebase {
+    100% {
+        width: 50%;
+    }
+}
+@keyframes typescript {
+    100% {
+        width: 60%;
+    }
+}
+@keyframes c-plus {
+    100% {
+        width: 75%;
+    }
+}

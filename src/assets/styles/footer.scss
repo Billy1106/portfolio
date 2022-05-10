@@ -1,0 +1,38 @@
+.footer{
+    position:relative;
+    bottom:0;
+  
+    background-color: #eeeeee;
+    width: 100%;
+    .container{
+        font-family: sans-serif;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display:flex;
+        flex-direction: row;
+        .p {
+            color:#8f8f8f;
+            font-size: medium;
+        }
+        .icons{
+            .first-icon {
+                padding-left: 30px;
+                transition: opacity 0.3s ease-out;
+            }
+            .first-icon:hover {
+                opacity: 0.1;
+            }
+            .other-icon {
+                padding-left: 20px;
+                transition: opacity 0.3s ease-out;
+            }
+            .other-icon:hover {
+                opacity: 0.1;
+            }
+
+        }
+    }
+    
+}
+

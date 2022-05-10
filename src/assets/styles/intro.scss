@@ -1,0 +1,32 @@
+.introduction {
+    
+    background: radial-gradient(circle,#3a3a3f,#111);
+    //background-color: #3a3a3f;
+    height:100vh;
+    padding-top: 50px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   
+    .intro-name {
+        color:white;
+        background-color: transparent;
+        border:0;
+        font-size:400%;
+        transition: transform 0.5s ease-in;
+    }
+    .intro-description {
+        color:white;
+        font-size:100%;
+    }
+    .intro-name:hover{
+        transform: scale(1.01);
+    }
+}
+
+
+
+
