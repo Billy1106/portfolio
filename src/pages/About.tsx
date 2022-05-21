@@ -40,14 +40,14 @@ const skillList: Skill[] = [
         skill: "Typescript",
         description: "string",
         time: 1,
-        percentage: 50,
+        percentage: 60,
         tech: <SiTypescript style={{ color: "rgb(0, 122, 204)" }} />,
     }, {
         id: 4,
         skill: "React",
         description: "string",
         time: 1,
-        percentage: 70,
+        percentage: 60,
         tech: <FaReact style={{ color: "rgba(97, 219, 251)" }} />,
     }
     , {
@@ -109,7 +109,7 @@ const About = () => {
                     <div className='main-container' data-aos="fade-right">
                         <p className='name'>Hi,<br></br> I'm Ryota Koda</p>
                         <p className='subtitle'>A Third-year Computer Science Major at The University of British Columbia</p>
-                        <p className='description'>Interested in Software Engineering, working with Java, Python,and Javascript (React.js)</p>
+                        <p className='subtitle'>Interested in Software Engineering, working with Java, Python,and Javascript (React.js)</p>
                     </div >
 
                     <Particles
@@ -130,7 +130,7 @@ const About = () => {
 
                             particles: {
                                 number: {
-                                    value: 40,
+                                    value: 50,
                                 },
                                 color: {
                                     value: "#fff"
@@ -166,13 +166,13 @@ const About = () => {
                         
 
                     </div>
-                    <div className="skill">
+                    <div className="skill" >
                             <div className='skillBars' data-aos="fade">
 
-                                <div className='chart'>
+                                <div className='chart' >
                                     <p>Java</p>
-                                    <footer>
-                                        <div className='java' style={{ background: "white" }}></div>
+                                    <footer >
+                                        <div className='java' style={{ background: "white" } }></div>
                                     </footer>
                                 </div>
                                 <div className='chart'>
@@ -200,15 +200,15 @@ const About = () => {
                                     </footer>
                                 </div>
                                 <div className='chart'>
-                                    <p>Firebase</p>
-                                    <footer>
-                                        <div className='firebase' style={{ background: "white" }}></div>
-                                    </footer>
-                                </div>
-                                <div className='chart'>
                                     <p>Typescript</p>
                                     <footer>
                                         <div className='typescript' style={{ background: "white" }}></div>
+                                    </footer>
+                                </div>
+                                <div className='chart'>
+                                    <p>Firebase</p>
+                                    <footer>
+                                        <div className='firebase' style={{ background: "white" }}></div>
                                     </footer>
                                 </div>
                                 <div className='chart'>
