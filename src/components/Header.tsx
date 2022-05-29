@@ -21,9 +21,7 @@ const Header = () => {
                 <button className={"button" +((location.pathname=="/")?" selected":"")} onClick={() => {
                         navigate("/")
                     }}>Home</button>
-                    <button className={"button" +((location.pathname=="/About")?" selected":"")} onClick={() => {
-                        navigate("/About")
-                    }}>About</button>
+                   
                     <button className={"button" +((location.pathname=="/History")?" selected":"")} onClick={() => {
                         navigate("/History")
                     }}>History</button>

@@ -1,0 +1,150 @@
+.aboutMe {
+    background-color: #3a3a3f;
+    padding-bottom: 50px;
+    .my-info {
+        font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
+        display: flex;
+        flex-direction: column;
+
+        margin-left: 50px;
+        margin-right: 50px;
+        background: #dbdbdb;
+        height: 90%;
+        box-shadow: 4px 5px 5px #000000;
+        border-radius: 20px;
+
+        .title {
+            margin-left: 50px;
+            margin-right: 50px;
+            text-align: center;
+
+            // border-bottom: 2px solid #454545;
+            margin-bottom: 50px;
+            font-size: 40px;
+        }
+        .sakura {
+            position: absolute;
+            z-index: 2;
+            transition: opacity 250ms;
+        }
+
+        .whoami {
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            margin-left: auto;
+            margin-right: 50px;
+            transition: margin-left 300ms;
+            transition: margin-right 300ms;
+
+            img {
+                margin-right: 80px;
+                margin-left: 130px;
+                width: 1000px;
+            }
+            .introduce {
+                text-align: left;
+                font-size: 50px;
+                margin-top: 1px;
+                margin-bottom: 5px;
+
+                padding: 0;
+            }
+
+            .description {
+                max-width: 100%;
+                text-align: left;
+                font-size: 18px;
+                margin-top: 5px;
+
+
+                padding: 0;
+                .name {
+                    font-size: 30px;
+                }
+            }
+            .skills {
+                display: flex;
+                flex-wrap: wrap;
+                padding-right: 0px;
+                margin-bottom: 0px;
+                .skill {
+                    margin-right: 10px;
+                    .name {
+                        margin-top: 0px;
+                        font-size: 15px;
+                        text-align: center;
+                    }
+                }
+            }
+            .additional-skills {
+                text-align: right;
+                margin-top: 0px;
+                font-size: 10px;
+            }
+            .highlight {
+                margin-top: 10px;
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+            .boxes {
+                margin-left: 0px;
+                margin-top: 20px;
+                display: flex;
+                flex-direction: row;
+
+                button {
+                    font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
+                    margin-right: 20px;
+                    margin-bottom: 50px;
+                    background: transparent;
+                    border: solid black;
+                    border-radius: 100px;
+                    padding: 10px 20px 10px 20px;
+                    font-size: 20px;
+                    transition: transform 250ms;
+                }
+                button:hover {
+                    transform: translateY(-10px);
+                }
+                button:active {
+                    box-shadow: 0 5px #666;
+                    // transform: translateY(4px);
+                }
+            }
+            .contact-me {
+                margin-left: 20px;
+                font-size: 17px;
+                margin-top: 1px;
+                margin-right: auto;
+                color: #454545;
+                text-align: center;
+                transition: transform 0.5s ease-out, color 0.5s ease-out;
+                background-color: transparent;
+                border: 0;
+            }
+            .contact-me:hover {
+                transform: scale(1.02);
+                color: rgb(109, 109, 109);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .aboutMe {
+        .my-info {
+            .sakura {
+                opacity: 0.1;
+            }
+            .whoami {
+                margin-left: auto;
+                margin-right: auto;
+                width: 90%;
+                .additional-skills {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

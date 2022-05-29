@@ -83,7 +83,7 @@ const eventLists: Event[] = [
     },
 ];
 
-const Works = () => {
+const History = () => {
     const [opacity, setOpacity] = useState(1);
     const handleScroll = () => {
         if(window.scrollY <= 400){
@@ -92,6 +92,7 @@ const Works = () => {
             setOpacity(0);
         }
     }
+    console.log(window.scrollY)
 
     window.addEventListener('scroll',handleScroll);
     return (
@@ -106,13 +107,14 @@ const Works = () => {
                 <Animation>
           
                     <div className='timeline' data-aos="fade" data-aos-duration="2000">
-                        <VerticalTimeline>
+                        <VerticalTimeline lineColor={ "#757575" }>
                             {eventLists.map(e => {
                                 return (
                                     <VerticalTimelineElement
+                                        
                                         key={e.id}
                                         iconStyle={{
-                                            background: "#3a3a3f",
+                                            background: "#757575",
                                             color: e.isShowIcon ? e.iconColor : "fff",
                                           }}
                                         icon={e.isShowIcon ? e.icon : ""}
@@ -140,4 +142,4 @@ const Works = () => {
     )
 }
 
-export default Works;
+export default History;

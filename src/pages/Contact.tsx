@@ -16,7 +16,7 @@ const Contact = () => {
     e.preventDefault();
     try {
       if (name == "" || email == "" || subject == "" || message == "") {
-        alert("Please fill the empty box")
+        alert("Please fill all the empty box")
       } else {
         const docRef = collection(db, "contacts")
         await addDoc(docRef, {
@@ -37,26 +37,17 @@ const Contact = () => {
         <div className='text'>Contact me</div>
         <p>Have a question or want to work together?</p>
       </div>
-
-        <form data-aos="fade-up" onSubmit={handleSubmit}>
+      <div data-aos="fade-up">
+        <form onSubmit={handleSubmit}>
 
           <input className="item-style" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)}></input>
           <input className="item-style" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} ></input>
           <input className="item-style" placeholder="Subject" value={subject} onChange={(e) => setSubject(e.target.value)} ></input>
           <input className="item-style message" placeholder="Message" value={message} onChange={(e) => setMessage(e.target.value)} ></input>
-          <button className="item-style" type='submit'>Submit</button>
+          <button type='submit' >Submit</button>
         </form>
-        {/* <div data-aos="fade-up" data-aos-delay="1000" style={{transform:`scale3d(0.4,0.4,0.4)`}}>
-          <div className="boxBase">
-            <div className="top" style={{border: '1px solid rgba(255, 255, 255)'}}></div>
-            <div className="bottom" style={{border: '1px solid rgba(255, 255, 255)'}}></div>
-            <div className="front" style={{border: '1px solid rgba(255, 255, 255)'}}></div>
-            <div className="back" style={{border: '1px solid rgba(255, 255, 255)'}}></div>
-            <div className="left" style={{border: '1px solid rgba(255, 255, 255)'}}></div>
-            <div className="right" style={{border: '1px solid rgba(255, 255, 255)'}}></div>
-          </div>
-          </div> */}
-        <ScrollToTop />
+      </div>
+      <ScrollToTop />
     </div>
 
 
