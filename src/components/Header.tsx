@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import '../assets/styles/header.scss'
 import Projects from '../pages/Projects';
-import { useNavigate,useLocation } from 'react-router';
+import { useNavigate,useLocation } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
@@ -37,7 +37,7 @@ const Header = () => {
                         Ryota's Portfolio
                     </p>
 
-                    <div className='menu'>
+                    {/* <div className='menu'>
                         <PopupState variant="popover" popupId="demo-popup-menu">
                             {(popupState) => (
                                 <React.Fragment>
@@ -54,7 +54,7 @@ const Header = () => {
                                 </React.Fragment>
                             )}
                         </PopupState>
-                    </div>
+                    </div> */}
                 </div>
             </nav>
         </div>

@@ -5,7 +5,7 @@ import myIcon from '../assets/img/my_avatar.svg';
 import sakura from '../assets/img/sakura.png';
 import 'aos/dist/aos.css'
 import Aos from "aos"
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import ScrollToTop from './ScrollTop';
 import { FaGithub, FaReact, FaPython, FaJava } from "react-icons/fa"
 import { SiTypescript, SiFirebase, SiMaterialui, SiCplusplus, SiHtml5, SiCss3 } from "react-icons/si"

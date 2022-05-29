@@ -4,11 +4,11 @@ import '../assets/styles/cube.scss'
 import '../assets/styles/intro.scss'
 import Typist from 'react-text-typist';
 import '../assets/styles/cube.scss'
-import { useNavigate } from 'react-router';
+
 import Aos from "aos"
 import AboutMe from '../components/AboutMe';
 function Home() {
-  let navigate = useNavigate();
+
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -32,10 +32,6 @@ function Home() {
             pauseTime={4000}
             typingSpeed={50} />
         </div>
-       
-
-
-
       </div>
       <AboutMe/>
 

@@ -18,10 +18,8 @@ const Pages = () => {
   const location = useLocation();
   return (
     <div>
-      <Router>
-      
+    {/* <Router> */}
         <Header />
-       
         <TransitionGroup component={null}>
           <CSSTransition
             classNames="fade"
@@ -38,8 +36,9 @@ const Pages = () => {
           </CSSTransition>
         </TransitionGroup>
         <Footer />
-      
-      </Router>
+        {/* </Router> */}
+       
+       
     </div>
   )
 }
