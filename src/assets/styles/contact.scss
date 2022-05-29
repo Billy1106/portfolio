@@ -1,16 +1,21 @@
 .contact {
-    background: radial-gradient(circle, #3a3a3f, #111);
+    //background: radial-gradient(circle, #3a3a3f, #111);
     //background-color: #3a3a3f;
+    background-color: #3a3a3f;
     color: white;
    
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     align-items: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: center;
     flex-direction: column;
+    font-family:'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+    
+  
     .title {
         width: 50%;
         padding-top: 50px;
+       
         .text {
             margin-top: 50px;
             position: relative;
@@ -35,37 +40,57 @@
     form {
         color: antiquewhite;
         min-width: 50%;
+        margin-bottom: 50px;
+        margin-top:30px;
+      
         .item-style{
-            margin-right: auto;
-            margin-left: auto;
+            background-color: transparent;
+            box-shadow: 4px 5px 5px #000000;
+            margin-top: 5px;
+            margin-bottom: 0px;
+            border-radius: 20px;
+            background: #DBDBDB;
             height: 50px;
-            display: block;
             font-size: 15px;
-            margin-bottom: 10px;
+          
+            padding-left: 20px;
+            
         }
         input{
             width: 100%;
-            color: #cccccc;
-            background-color: #3a3a3f;
+            color: #000000;
+            background-color: #dbdbdb;
             border: none;
+            
         }
         .message {
             padding-bottom: 100px;
         }
         button{
-            width: 50%;
-            color: #cccccc;
-            background-color: transparent;
-            border: 1px solid #6e6e6e;
-            transition:background-color 1s ease-in-out;
-    
-            
+            font-family:'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+            color: #dbdbdb;
+            background: transparent;
+         
+            border:solid #dbdbdb;
+            border-radius: 100px;
+            margin-top: 50px;
+        
+            padding:10px 50px 10px 50px;
+            font-size:20px;
+            transition: transform 250ms;
+        
         }
         button:hover{
-            background-color: rgb(58, 58, 63);
-            
+            transform: translateY(-10px);
         }
+        button:active {
+                   
+            box-shadow: 0 5px #666;
+            // transform: translateY(4px);
+          }
+       
     }
+   
     
 }
 @keyframes border_anim {

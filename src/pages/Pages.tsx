@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom';
 import Home from '../pages/Home';
 import Projects from '../pages/Projects';
-import About from '../pages/About';
 import History from '../pages/History';
 import ErrorPage from '../pages/ErrorPage';
 import Contact from '../pages/Contact'
@@ -31,7 +30,6 @@ const Pages = () => {
           >
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/About" element={<About />} />
               <Route path="/Projects" element={<Projects />} />
               <Route path="/History" element={<History />} />
               <Route path="/Contact" element={<Contact />} />

@@ -4,7 +4,7 @@
     color: white;
     min-width: 100%;
     padding-top: 50px;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    //font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 
     .title {
         margin: 10px 0px 10px 0px;
@@ -32,11 +32,11 @@
                 border-bottom: 2px solid white;
             }
             .subtitle {
-                font-size: 30px;
+                font-size: 20px;
                 margin: 0px;
             }
             .description {
-                font-size: 15px;
+                font-size: 10px;
             }
         }
         #tsparticles {
@@ -168,7 +168,7 @@
 }
 @keyframes html-css {
     100% {
-        width: 60%;
+        width: 65%;
     }
 }
 @keyframes kivy {
@@ -178,7 +178,7 @@
 }
 @keyframes react {
     100% {
-        width: 70%;
+        width: 60%;
     }
 }
 @keyframes firebase {

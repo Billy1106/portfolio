@@ -1,6 +1,6 @@
 .works {
-    background: radial-gradient(circle, #3a3a3f, #111);
-    //background-color: #3a3a3f;
+    //background: radial-gradient(circle, #3a3a3f, #111);
+    background-color: #3a3a3f;
     overflow: hidden;
     justify-content: center;
     align-items: center;
@@ -32,10 +32,18 @@
 
     .timeline {
         // overflow: auto;
-        margin-top: 550px;
+        background: #DBDBDB;
+        box-shadow: 4px 5px 5px #000000;
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-top: 600px;
+        margin-bottom: 50px;
+        border-radius: 20px;
+
+        padding-top: 50px;
         padding-bottom: 50px;
         .date {
-            color: white;
+            color: 454545;
         }
         .organization {
             display: flex;
@@ -64,6 +72,7 @@
             .date {
                 color: #3a3a3f;
             }
+            
             .organization {
                 display: flex;
                 flex-direction: column;

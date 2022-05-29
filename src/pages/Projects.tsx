@@ -30,7 +30,7 @@ const projectList: Project[] = [
     },
     {
         id: 1,
-        title: "YourToDOo",
+        title: "YourToDo",
         description: "TODO list web application that you can add, remove, and check the completed task easily.",
         img: YourtodoImg,
         techs: [<FaReact style={{ color: "rgba(97, 219, 251)" }} />, <SiTypescript style={{ color: "rgb(0, 122, 204)" }} />, <SiFirebase style={{ color: "rgb(245, 130, 13)" }} />, <SiMaterialui style={{ color: "rgb(0, 160, 204)" }} />],
@@ -38,26 +38,27 @@ const projectList: Project[] = [
     },
     {
         id: 2,
-        title: "Fake Video Generator",
+        title: "Video Generator",
         description: "A video generator that creates intentional lags and image blur to make an execuse to turn off your camera while zooming.",
         img: VideoGenImg,
-        techs: [<FaPython style={{ color: 'yellow' }} />, <img src={KivyIcon} alt="Logo" width="15%" height="77%" />],
+        techs: [<FaPython style={{ color: 'yellow' }} />, <img src={KivyIcon} alt="Logo" width="10%" height="68%" />],
         link: "https://github.com/Billy1106/portofolio",
     },
     {
+        
         id: 3,
-        title: "Live Streaming Clipper",
-        description: "Analyses the rate of comments on YouTube live stream and generate clips.",
-        img: ComingSoon,
-        techs: [<FaGithub style={{ color: 'blue' }} />, <FaPython style={{ color: 'yellow' }} />],
-        link: "https://github.com/Billy1106",
-    },
-    {
-        id: 4,
         title: "DNS Lookup Tool",
         description: "A DNS client capable of resolving DNS queries of type A, AAAA, MX, NS, and CNAME. Built during the university course.",
         img: ComingSoon,
         techs: [<FaGithub style={{ color: 'blue' }} />, <FaJava style={{ color: 'white' }} />],
+        link: "https://github.com/Billy1106",
+    },
+    {
+        id: 4,
+        title: "Live Streaming Clipper",
+        description: "Analyses the rate of comments on YouTube live stream and generate clips.",
+        img: ComingSoon,
+        techs: [<FaGithub style={{ color: 'blue' }} />, <FaPython style={{ color: 'yellow' }} />],
         link: "https://github.com/Billy1106",
     }
 ]
@@ -84,28 +85,26 @@ const Projects = () => {
                     <div className='animate'>
                     <p style={{fontSize:"60px"}}>Works and Projects</p>
                     <p style={{fontSize:"20px",opacity:0.5,paddingBottom:50}}>My personal and academic projects.</p>
-                    <a href="#cards"><span></span></a>
+                
                     </div>
                 </div>
                 
 
-                <Grid container className="cards" id="cards">
-                
+                <Grid container className="cards" id="cards" data-aos="fade">
                     {
                         projectList.map((e) => {
                             return (
-                                <Grid item xs={12} sm={6} md={4} key={e.id}>
-
-                                    <Card className="card" >
+                                <Grid item xs={12} sm={12} md={6} key={e.id}>
+                                    <Card className="card" data-aos="fade-up">
                                         <CardActionArea onClick={() => window.open(e.link, "_blank")}>
 
                                             <CardMedia
                                                 component="img"
                                                 image={e.img}
                                                 alt={e.title}
-                                                style={{ height: 180 }}
+                                                style={{ height: 220 }}
                                                 className='cardImg' />
-                                            <CardContent>
+                                            <CardContent className="cardContent">
                                                 <div className="cardTitle">
                                                     <Typography gutterBottom variant="h5" component="div" className="productTitle">
                                                         {e.title}
