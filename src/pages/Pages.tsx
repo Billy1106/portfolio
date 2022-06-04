@@ -5,7 +5,7 @@ import Projects from '../pages/Projects';
 import History from '../pages/History';
 import ErrorPage from '../pages/ErrorPage';
 import Contact from '../pages/Contact'
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import {
@@ -18,10 +18,8 @@ const Pages = () => {
   const location = useLocation();
   return (
     <div>
-      <Router>
-      
+    {/* <Router> */}
         <Header />
-       
         <TransitionGroup component={null}>
           <CSSTransition
             classNames="fade"
@@ -38,8 +36,9 @@ const Pages = () => {
           </CSSTransition>
         </TransitionGroup>
         <Footer />
-      
-      </Router>
+        {/* </Router> */}
+       
+       
     </div>
   )
 }

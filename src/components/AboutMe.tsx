@@ -5,7 +5,7 @@ import myIcon from '../assets/img/my_avatar.svg';
 import sakura from '../assets/img/sakura.png';
 import 'aos/dist/aos.css'
 import Aos from "aos"
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import ScrollToTop from './ScrollTop';
 import { FaGithub, FaReact, FaPython, FaJava } from "react-icons/fa"
 import { SiTypescript, SiFirebase, SiMaterialui, SiCplusplus, SiHtml5, SiCss3 } from "react-icons/si"
@@ -82,7 +82,7 @@ const AboutMe = () => {
     }, []);
 
 
-    const [size, setSize] = useState(600);
+    const [size, setSize] = useState(window.innerWidth >= 1400?600:600 - 0.5 * (1400 - window.innerWidth));
     const handleScreenSize = () => {
         if (window.innerWidth >= 1400) {
             setSize(600);
@@ -113,7 +113,7 @@ const AboutMe = () => {
                             <div className="skills">
                                 {skillList.map((value) => {
                                     return (
-                                        <div className="skill" style={{ fontSize: 50 }}>
+                                        <div className="skill" style={{ fontSize: 30,textAlign:'center' }}>
 
                                             {value.tech}
                                             <p className='name'>{value.skill}</p>
@@ -124,7 +124,7 @@ const AboutMe = () => {
 
                             </div>
 
-                            <p className='additional-skills' >And Git, Node, Numpy, Kivy, MaterialUI etc...</p>
+                            <p className='additional-skills' >and Git, Node, Numpy, Kivy, MaterialUI etc...</p>
 
 
                             <p className='highlight' >Here are a Few Highlights:</p>

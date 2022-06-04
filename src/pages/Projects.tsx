@@ -45,7 +45,7 @@ const projectList: Project[] = [
         link: "https://github.com/Billy1106/portofolio",
     },
     {
-        
+
         id: 3,
         title: "DNS Lookup Tool",
         description: "A DNS client capable of resolving DNS queries of type A, AAAA, MX, NS, and CNAME. Built during the university course.",
@@ -70,73 +70,74 @@ const Projects = () => {
 
     const [opacity, setOpacity] = useState(1);
     const handleScroll = () => {
-        if(window.scrollY <= 400){
-            setOpacity( 1 - window.scrollY/400);
-        }else{
+        if (window.scrollY <= 400) {
+            setOpacity(1 - window.scrollY / 400);
+        } else {
             setOpacity(0);
         }
     }
 
-    window.addEventListener('scroll',handleScroll);
+    window.addEventListener('scroll', handleScroll);
     return (
         <div>
             <div className='projects'  >
                 <div className='title' style={{ opacity: opacity }} >
                     <div className='animate'>
-                    <p style={{fontSize:"60px"}}>Works and Projects</p>
-                    <p style={{fontSize:"20px",opacity:0.5,paddingBottom:50}}>My personal and academic projects.</p>
-                
+                        <p style={{ fontSize: "60px" }}>Works and Projects</p>
+                        <p style={{ fontSize: "20px", opacity: 0.5, paddingBottom: 50 }}>My personal and academic projects.</p>
+
                     </div>
                 </div>
-                
 
-                <Grid container className="cards" id="cards" data-aos="fade">
-                    {
-                        projectList.map((e) => {
-                            return (
-                                <Grid item xs={12} sm={12} md={6} key={e.id}>
-                                    <Card className="card" data-aos="fade-up">
-                                        <CardActionArea onClick={() => window.open(e.link, "_blank")}>
+                <div className="cards" id="cards" data-aos="fade">
+                    <Grid container>
+                        {
+                            projectList.map((e) => {
+                                return (
+                                    <Grid item xs={12} sm={12} md={6} key={e.id}>
+                                        <Card className="card" data-aos="fade-up">
+                                            <CardActionArea onClick={() => window.open(e.link, "_blank")}>
 
-                                            <CardMedia
-                                                component="img"
-                                                image={e.img}
-                                                alt={e.title}
-                                                style={{ height: 220 }}
-                                                className='cardImg' />
-                                            <CardContent className="cardContent">
-                                                <div className="cardTitle">
-                                                    <Typography gutterBottom variant="h5" component="div" className="productTitle">
-                                                        {e.title}
+                                                <CardMedia
+                                                    component="img"
+                                                    image={e.img}
+                                                    alt={e.title}
+                                                    style={{ height: 220 }}
+                                                    className='cardImg' />
+                                                <CardContent className="cardContent">
+                                                    <div className="cardTitle">
+                                                        <Typography gutterBottom variant="h5" component="div" className="productTitle">
+                                                            {e.title}
+                                                        </Typography>
+                                                        <FaGithub className='iconIcon' />
+                                                    </div>
+                                                    <Typography variant="body2" color="text.secondary" className='cardDescription'>
+                                                        {e.description}
                                                     </Typography>
-                                                    <FaGithub className='iconIcon' />
-                                                </div>
-                                                <Typography variant="body2" color="text.secondary" className='cardDescription'>
-                                                    {e.description}
-                                                </Typography>
-                                                <div className='cardTechs'>
-                                                    {e.techs.map((t) => {
-                                                        return <div className='cardTech'>{t}</div>;
-                                                    })}
-                                                </div>
+                                                    <div className='cardTechs'>
+                                                        {e.techs.map((t) => {
+                                                            return <div className='cardTech'>{t}</div>;
+                                                        })}
+                                                    </div>
 
-                                            </CardContent>
-                                        </CardActionArea>
-                                    </Card>
-                                </Grid>
+                                                </CardContent>
+                                            </CardActionArea>
+                                        </Card>
+                                    </Grid>
 
 
-                            )
-                        })
-                    }
+                                )
+                            })
+                        }
 
-                </Grid>
+                    </Grid>
+                </div>
 
 
             </div>
             <ScrollToTop />
         </div>
-        
+
     )
 }
 

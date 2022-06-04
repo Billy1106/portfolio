@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import '../assets/styles/header.scss'
 import Projects from '../pages/Projects';
-import { useNavigate,useLocation } from 'react-router';
+import { useNavigate,useLocation } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
@@ -46,7 +46,6 @@ const Header = () => {
                                     </Button>
                                     <Menu {...bindMenu(popupState)}>
                                         <MenuItem onClick={()=>{navigate("/")}}>Home</MenuItem>
-                                        <MenuItem onClick={()=>{navigate("/About")}}>About</MenuItem>
                                         <MenuItem onClick={()=>{navigate("/History")}}>History</MenuItem>
                                         <MenuItem onClick={()=>{navigate("/Projects")}}>Projects</MenuItem>
                                         <MenuItem onClick={()=>{navigate("/Contact")}}>Contact</MenuItem>
