@@ -20,7 +20,7 @@ const eventLists: Event[] = [
         description:
             "Developed Face Recognition Software with Yolov3(Python) \nCreated training data for the machine learning algorithm.",
         isShowIcon: true,
-        icon: <WorkIcon/>,
+        icon: <WorkIcon />,
         iconColor: "#fff",
     },
     {
@@ -33,7 +33,7 @@ const eventLists: Event[] = [
             "Worked as interpreter of the company to communicate with headquarters\nGained proficiency in using metasploit frameworks to conduct penetration testing and vulnerability scanning.",
 
         isShowIcon: true,
-        icon: <WorkIcon/>,
+        icon: <WorkIcon />,
         iconColor: "#fff",
     },
     {
@@ -45,7 +45,7 @@ const eventLists: Event[] = [
         description:
             "Science Faculty, Computer Science Major \nDeveloping a strong understanding of Data structure and Algorithm, Computer Architecture and Database.",
         isShowIcon: true,
-        icon: <SchoolIcon/>,
+        icon: <SchoolIcon />,
         iconColor: "#fff",
     },
     {
@@ -56,7 +56,7 @@ const eventLists: Event[] = [
         description:
             "Delivering a 1-hour presentation about the universities in Canada to classes of 20-30 Japanese high school students who are interested in studying abroad after their graduation.",
         isShowIcon: true,
-        icon: <WorkIcon/>,
+        icon: <WorkIcon />,
         iconColor: "#fff",
     },
     {
@@ -67,7 +67,7 @@ const eventLists: Event[] = [
         description:
             "Teaching basic coding skills through Scratch and Python to young people between 7 and 17.",
         isShowIcon: true,
-        icon: <CastForEducationIcon/>,
+        icon: <CastForEducationIcon />,
         iconColor: "#fff",
     },
     {
@@ -78,7 +78,7 @@ const eventLists: Event[] = [
         description:
             "Teaching English once in a week to high school age children suffering from poverty due to welfare or single parent families.",
         isShowIcon: true,
-        icon: <VolunteerActivismIcon/>,
+        icon: <VolunteerActivismIcon />,
         iconColor: "#fff",
     },
 ];
@@ -86,48 +86,47 @@ const eventLists: Event[] = [
 const History = () => {
     const [opacity, setOpacity] = useState(1);
     const handleScroll = () => {
-        if(window.scrollY <= 400){
-            setOpacity( 1 - window.scrollY/400);
-        }else{
+        if (window.scrollY <= 400) {
+            setOpacity(1 - window.scrollY / 400);
+        } else {
             setOpacity(0);
         }
     }
     console.log(window.scrollY)
 
-    window.addEventListener('scroll',handleScroll);
+    window.addEventListener('scroll', handleScroll);
     return (
         <div>
             <div className='works'  >
-                <div style={{opacity:opacity}}>
+                <div style={{ opacity: opacity }}>
                     <div className='title'>
-                    <p>History</p>
-                    <p className='subtitle'>My work experience and volunteer</p>
+                        <p>History</p>
+                        <p className='subtitle'>My work experience and volunteer</p>
                     </div>
                 </div>
                 <Animation>
-          
+
                     <div className='timeline' data-aos="fade" data-aos-duration="2000">
-                        <VerticalTimeline lineColor={ "#757575" }>
+                        <VerticalTimeline lineColor={"#757575"}>
                             {eventLists.map(e => {
                                 return (
                                     <VerticalTimelineElement
-                                        
+
                                         key={e.id}
                                         iconStyle={{
                                             background: "#757575",
                                             color: e.isShowIcon ? e.iconColor : "fff",
-                                          }}
+                                        }}
                                         icon={e.isShowIcon ? e.icon : ""}
                                         date={e.date}
                                         contentStyle={{ background: "#eeeeee", color: "#3a3a3f", }}
                                         dateClassName={"date"}
-                                        
                                     >
                                         <div className='organization'>
-                                        <h3 className='vertical-timeline-element-title'>{e.organization}</h3>
-                                        <p className='vertical-timeline-element-subtitle position'>{e.position}</p>
+                                            <h3 className='vertical-timeline-element-title'>{e.organization}</h3>
+                                            <p className='vertical-timeline-element-subtitle position'>{e.position}</p>
                                         </div>
-                                        
+
                                         <p className='vertical-timeline-element-subtitle description'>{e.description.split('\n').map(t => (<div>{t}</div>))}</p>
                                     </VerticalTimelineElement>
                                 )

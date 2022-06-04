@@ -37,7 +37,7 @@ const Header = () => {
                         Ryota's Portfolio
                     </p>
 
-                    {/* <div className='menu'>
+                    <div className='menu'>
                         <PopupState variant="popover" popupId="demo-popup-menu">
                             {(popupState) => (
                                 <React.Fragment>
@@ -46,7 +46,6 @@ const Header = () => {
                                     </Button>
                                     <Menu {...bindMenu(popupState)}>
                                         <MenuItem onClick={()=>{navigate("/")}}>Home</MenuItem>
-                                        <MenuItem onClick={()=>{navigate("/About")}}>About</MenuItem>
                                         <MenuItem onClick={()=>{navigate("/History")}}>History</MenuItem>
                                         <MenuItem onClick={()=>{navigate("/Projects")}}>Projects</MenuItem>
                                         <MenuItem onClick={()=>{navigate("/Contact")}}>Contact</MenuItem>
@@ -54,7 +53,7 @@ const Header = () => {
                                 </React.Fragment>
                             )}
                         </PopupState>
-                    </div> */}
+                    </div>
                 </div>
             </nav>
         </div>

@@ -45,7 +45,7 @@
     "vertical-timeline-component-react": "^2.1.2",
     "web-vitals": "^2.1.3"
   },
-  "homepage": "https://billy1106.github.io/portfolio",
+  "homepage": "https://billy1106.github.io/portfolio/",
   "scripts": {
     "predeploy":"npm run build",
     "deploy": "gh-pages -d build",
