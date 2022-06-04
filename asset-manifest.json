@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.2e3b7c09.css",
-    "main.js": "/portfolio/static/js/main.fb2719d3.js",
+    "main.css": "/portfolio/static/css/main.76bc97f7.css",
+    "main.js": "/portfolio/static/js/main.e07d217d.js",
     "static/media/VideoGenerator.png": "/portfolio/static/media/VideoGenerator.8001109fb2338ff86758.png",
     "static/media/YourTodo.jpeg": "/portfolio/static/media/YourTodo.12b80a162776232898b5.jpeg",
     "static/media/sakura.png": "/portfolio/static/media/sakura.0e0001aa64c1939cc207.png",
@@ -9,11 +9,11 @@
     "static/media/Kivy_logo.png": "/portfolio/static/media/Kivy_logo.d9976e52d2468e8b2aac.png",
     "static/media/coming_soon.jpg": "/portfolio/static/media/coming_soon.9309409e9a706ded2c9d.jpg",
     "index.html": "/portfolio/index.html",
-    "main.2e3b7c09.css.map": "/portfolio/static/css/main.2e3b7c09.css.map",
-    "main.fb2719d3.js.map": "/portfolio/static/js/main.fb2719d3.js.map"
+    "main.76bc97f7.css.map": "/portfolio/static/css/main.76bc97f7.css.map",
+    "main.e07d217d.js.map": "/portfolio/static/js/main.e07d217d.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e3b7c09.css",
-    "static/js/main.fb2719d3.js"
+    "static/css/main.76bc97f7.css",
+    "static/js/main.e07d217d.js"
   ]
 }
